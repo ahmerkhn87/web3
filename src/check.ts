@@ -22,7 +22,7 @@ const uncles = [
 ];
 
 var init = async function () {
-  for (let i = 0; i < uncles.length; i++) {
+  for (let i in uncles) {
     let block954 = await Provider.getBlockWithTransactions(uncles[i]);
     console.log(
       "Transactions:",
